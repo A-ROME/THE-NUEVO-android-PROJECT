@@ -7,7 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.WindowManager;
 
-public class Home extends ActionBarActivity {
+public class Home extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,13 @@ public class Home extends ActionBarActivity {
 	        }
 		 
 		setContentView(R.layout.home);
+		setFonts();
 	}
 
+
+protected void setFonts(){
+	TextView tv=(TextView)fingViewById(R.id.Home);
+	
+}
 	
 }
